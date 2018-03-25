@@ -1,8 +1,10 @@
 FROM webdevops/base:alpine
 
+MAINTAINER Ralf Schneider ralf@hr-interactive.de
+
 ENV HTTRACK_URI  ""
 
-ENV HTTRACK_OPTS ""
+ENV HTTRACK_OPTS "-O mirror"
 
 
 COPY conf/ /opt/docker/

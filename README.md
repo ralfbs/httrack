@@ -1,6 +1,11 @@
 Httrack in Docker
 =================
+Lightweight docker implementation of the website copier httrack. 
 
+
+What does it do?
+----------------
+Allows to make mirrors and copies of websites without having to install httrack.
 
 How to use the image:
 ---------------------
@@ -16,8 +21,11 @@ docker run -it \
 ```
 This will create a copy of the google startpage in your working directory
 
-For a list of possible options see [HTTrack User Guide](https://www.httrack.com/html/fcguide.html)
 
 Environment Variables:
 ----------------------
 
+* HTTRACK_URI: URL of the site to mirror (e.g. https://example.com)
+* HTTRACK_OPTS: httrack options
+
+For a list of possible options see [HTTrack User Guide](https://www.httrack.com/html/fcguide.html)
