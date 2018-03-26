@@ -9,17 +9,15 @@ Allows to make mirrors and copies of websites without having to install httrack.
 
 How to use the image:
 ---------------------
-Build the image:
-`docker build -t ralfbs/httrack:latest .`
-
 Run the image:
 ```
 docker run -it \
     -v $(pwd):/app \
-    -e HTTRACK_URI=http://google.com \
+    -e HTTRACK_URI=http://example.com \
     ralfbs/httrack:latest
 ```
-This will create a copy of the google startpage in your working directory
+Replace example.com with the website you want to copy.
+This will create a copy of that website in your working directory
 
 
 Environment Variables:
@@ -29,3 +27,4 @@ Environment Variables:
 * HTTRACK_OPTS: httrack options
 
 For a list of possible options see [HTTrack User Guide](https://www.httrack.com/html/fcguide.html)
+
